@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pretty Little Liars - Fã Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Pretty Little Liars</h1>
+    <nav>
+      <ul>
+        <li><a href="#personagens">Personagens</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="banner">
+    <h2>“Nunca confie em uma garota bonita com um segredo feio.”</h2>
+  </section>
+
+  <section id="personagens">
+    <h2>Personagens Principais</h2>
+    <div class="galeria">
+      <div class="card">
+        <img src="https://i.imgur.com/QkErwz2.jpg" alt="Alison" />
+        <p>Alison DiLaurentis</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/3c6Rf1j.jpg" alt="Emily" />
+        <p>Emily Fields</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/C8DdW9B.jpg" alt="Spencer" />
+        <p>Spencer Hastings</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/nkL2Aqv.jpg" alt="Hanna" />
+        <p>Hanna Marin</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/c8BNhbm.jpg" alt="Aria" />
+        <p>Aria Montgomery</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="curiosidades">
+    <h2>Curiosidades</h2>
+    <div class="carrossel">
+      <div class="slide">🕵️ A série foi baseada nos livros de Sara Shepard.</div>
+      <div class="slide">📺 O piloto foi ao ar em 2010 e a série teve 7 temporadas.</div>
+      <div class="slide">👀 “A” teve múltiplas identidades ao longo da série.</div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Fale com a gente!</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu email" required />
+      <textarea placeholder="Sua mensagem..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Site criado por Nathy 💖</p>
+  </footer>
+
+  <script>
+    // Simples carrossel automático
+    let slides = document.querySelectorAll('.slide');
+    let index = 0;
+    setInterval(() => {
+      slides.forEach(s => s.style.display = 'none');
+      slides[index].style.display = 'block';
+      index = (index + 1) % slides.length;
+    }, 3000);
+  </script>
+
+</body>
+</html>
